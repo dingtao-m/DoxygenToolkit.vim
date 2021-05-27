@@ -265,18 +265,16 @@
 "endif
 let loaded_DoxygenToolkit = 1
 "echo 'Loading DoxygenToolkit...'
-let s:licenseTag = "Copyright (C) \<enter>\<enter>"
-let s:licenseTag = s:licenseTag . "This program is free software; you can redistribute it and/or\<enter>"
-let s:licenseTag = s:licenseTag . "modify it under the terms of the GNU General Public License\<enter>"
-let s:licenseTag = s:licenseTag . "as published by the Free Software Foundation; either version 2\<enter>"
-let s:licenseTag = s:licenseTag . "of the License, or (at your option) any later version.\<enter>\<enter>"
-let s:licenseTag = s:licenseTag . "This program is distributed in the hope that it will be useful,\<enter>"
-let s:licenseTag = s:licenseTag . "but WITHOUT ANY WARRANTY; without even the implied warranty of\<enter>"
-let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\<enter>"
-let s:licenseTag = s:licenseTag . "GNU General Public License for more details.\<enter>\<enter>"
-let s:licenseTag = s:licenseTag . "You should have received a copy of the GNU General Public License\<enter>"
-let s:licenseTag = s:licenseTag . "along with this program; if not, write to the Free Software\<enter>"
-let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.\<enter>"
+let s:licenseTag = "==============================================================================\<enter>"
+let s:licenseTag = s:licenseTag . " Copyright (C)  \<enter>"
+let s:licenseTag = s:licenseTag . "\<enter>"
+let s:licenseTag = s:licenseTag . " This code and information is provided \”as is\” without warranty of any kind, \<enter>"
+let s:licenseTag = s:licenseTag . " either expressed or implied, including but not limited to the implied \<enter>"
+let s:licenseTag = s:licenseTag . "  warranties of merchantability and/or fitness for a particular purpose.\<enter>"
+let s:licenseTag = s:licenseTag . "\<enter>"
+let s:licenseTag = s:licenseTag . " This source code is licensed under the MPL-2.0 (found in the COPYING file \<enter>"
+let s:licenseTag = s:licenseTag . " in the root directory).\<enter>"
+let s:licenseTag = s:licenseTag . "==============================================================================\<enter>"
 
 " Common standard constants
 if !exists("g:DoxygenToolkit_briefTag_pre")
