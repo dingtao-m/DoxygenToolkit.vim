@@ -274,7 +274,7 @@ let s:licenseTag = s:licenseTag . " warranties of merchantability and/or fitness
 let s:licenseTag = s:licenseTag . "\<enter>"
 let s:licenseTag = s:licenseTag . " This source code is licensed under the MPL-2.0 (found in the COPYING file \<enter>"
 let s:licenseTag = s:licenseTag . " in the root directory).\<enter>"
-let s:licenseTag = s:licenseTag . "==============================================================================\<enter>"
+let s:licenseTag = s:licenseTag . "=============================================================================="
 
 " Common standard constants
 if !exists("g:DoxygenToolkit_briefTag_pre")
