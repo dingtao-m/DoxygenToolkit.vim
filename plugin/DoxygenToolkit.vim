@@ -271,9 +271,9 @@ let s:licenseTag = s:licenseTag . " This code and information is provided \”as
 let s:licenseTag = s:licenseTag . " either expressed or implied, including but not limited to the implied \<enter>"
 let s:licenseTag = s:licenseTag . " warranties of merchantability and/or fitness for any particular purpose.\<enter>"
 let s:licenseTag = s:licenseTag . "\<enter>"
-let s:licenseTag = s:licenseTag . " This source code is licensed under the MPL-2.0 (found in the COPYING file \<enter>"
-let s:licenseTag = s:licenseTag . " in the root directory).\<enter>"
-let s:licenseTag = s:licenseTag . "==============================================================================\<enter>"
+let s:licenseTag = s:licenseTag . " This source code is available under the specified licenses (found in the \<enter>"
+let s:licenseTag = s:licenseTag . " COPYING file in the root directory).\<enter>"
+let s:licenseTag = s:licenseTag . "=============================================================================="
 
 " Common standard constants
 if !exists("g:DoxygenToolkit_briefTag_pre")
@@ -444,13 +444,11 @@ function! <SID>DoxygenLicenseFunc()
   endif
   mark d
   let l:date = strftime("%Y")
+  let l:licenseTag = substitute( g:DoxygenToolkit_licenseTag, "\<author>", g:DoxygenToolkit_authorName, "g" )
   exec "normal O".strpart( s:startCommentBlock, 0, 1 )
-  exec "normal A".strpart( s:startCommentBlock, 1 ).substitute( g:DoxygenToolkit_licenseTag, "\<enter>", "\<enter>".s:interCommentBlock, "g" )
+  exec "normal A".strpart( s:startCommentBlock, 1 ).substitute( l:licenseTag, "\<enter>", "\<enter>".s:interCommentBlock, "g" )
   if( s:endCommentBlock != "" )
     exec "normal o".s:endCommentBlock
-  endif
-  if( g:DoxygenToolkit_licenseTag == s:licenseTag )
-    exec "normal %jA".l:date." - ".g:DoxygenToolkit_authorName
   endif
   exec "normal `d"
 
