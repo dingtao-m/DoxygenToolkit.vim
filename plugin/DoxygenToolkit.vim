@@ -266,7 +266,8 @@
 let loaded_DoxygenToolkit = 1
 "echo 'Loading DoxygenToolkit...'
 let s:licenseTag = "==============================================================================\<enter>"
-let s:licenseTag = s:licenseTag . " Copyright (C) \<enter>\<enter>"
+let s:licenseTag = s:licenseTag . " Copyright (C) \<author>\<enter>"
+let s:licenseTag = s:licenseTag . "\<enter>"
 let s:licenseTag = s:licenseTag . " This code and information is provided \”as is\” without warranty of any kind,\<enter>"
 let s:licenseTag = s:licenseTag . " either expressed or implied, including but not limited to the implied \<enter>"
 let s:licenseTag = s:licenseTag . " warranties of merchantability and/or fitness for any particular purpose.\<enter>"
