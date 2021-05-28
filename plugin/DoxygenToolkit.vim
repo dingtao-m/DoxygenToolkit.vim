@@ -266,15 +266,14 @@
 let loaded_DoxygenToolkit = 1
 "echo 'Loading DoxygenToolkit...'
 let s:licenseTag = "==============================================================================\<enter>"
-let s:licenseTag = s:licenseTag . " Copyright (C)  \<enter>"
-let s:licenseTag = s:licenseTag . "\<enter>"
+let s:licenseTag = s:licenseTag . " Copyright (C) \<enter>\<enter>"
 let s:licenseTag = s:licenseTag . " This code and information is provided \”as is\” without warranty of any kind,\<enter>"
 let s:licenseTag = s:licenseTag . " either expressed or implied, including but not limited to the implied \<enter>"
 let s:licenseTag = s:licenseTag . " warranties of merchantability and/or fitness for any particular purpose.\<enter>"
 let s:licenseTag = s:licenseTag . "\<enter>"
 let s:licenseTag = s:licenseTag . " This source code is licensed under the MPL-2.0 (found in the COPYING file \<enter>"
 let s:licenseTag = s:licenseTag . " in the root directory).\<enter>"
-let s:licenseTag = s:licenseTag . "=============================================================================="
+let s:licenseTag = s:licenseTag . "==============================================================================\<enter>"
 
 " Common standard constants
 if !exists("g:DoxygenToolkit_briefTag_pre")
